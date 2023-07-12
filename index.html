@@ -16,7 +16,15 @@
             font-size: 14px;
         }
         
-        section.first-section.main-image-banner {
+        .fs-12 {
+            font-size: 12px;
+        }
+        
+        ul.dropdown-menu.show {
+            left: -50px;
+        }
+        
+        section.first-sec.main-image-banner {
             background: #132030;
             background-image: url(assets/image/image-banner.svg);
             background-size: cover;
@@ -67,7 +75,7 @@
             color: #31b0fc;
         }
         
-        .first-section .container {
+        .first-sec .container {
             padding-top: 110px;
             padding-bottom: 110px;
         }
@@ -79,13 +87,46 @@
                 border-radius: 35px;
             }
         }
+        /* second-section */
+        
+        .second-sec-pera-hight {
+            height: 65px;
+            overflow: hidden;
+        }
+        
+        .second-sec-hover-eff:hover {
+            box-shadow: 0px 0px 10px #b3b3b3;
+            filter: contrast(0.6);
+            border-radius: 6px;
+        }
+        /* landing page  */
+        
+        .landing-main {
+            background-image: url(assets/image/landing-img.webp);
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: 1440px 2279px;
+        }
+        /* third section  */
+        
+        .third-sec-col-a {
+            width: 25%;
+            z-index: 0;
+            transform: scale(1.25);
+            top: 110px;
+        }
+        
+        .third-sec-col-b {
+            z-index: 1;
+            width: 830px;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0">
-            <div class="container-fluid .px-sm-5">
+            <div class="container-fluid px-sm-5">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -109,7 +150,7 @@
 
     </header>
     <main>
-        <section class="first-section main-image-banner">
+        <section class="first-sec main-image-banner">
             <div class="container text-center">
                 <!-- <h2 class="_visuallyhidden">pub.dev package manager</h2> -->
                 <img class="logo container-fluid mb-5" src="assets/image/main-logo.svg" alt="pub.dev package manager" width="328" height="70">
@@ -124,6 +165,175 @@
                 <p class="mt-4 text-white image-banner-text-color">The official package repository for <a class="text-decoration-none" href="https://dart.dev/" rel="noopener" target="_blank">Dart</a> and <a class="text-decoration-none" href="https://flutter.dev/" rel="noopener" target="_blank">Flutter</a>                    apps.</p>
                 <img src="assets/image/pub-dev-support.png" alt="Supported by Google" width="218" height="36"></div>
         </section>
+        <sectio class="second-sec">
+            <div class="container-xl py-5">
+                <div class="container-fluid">
+                    <h2 class="fw-normal">Flutter Favorites </h2>
+                    <p class="">Some of the packages that demonstrate the <a class="text-decoration-none" href="https://flutter.dev/docs/development/packages-and-plugins/favorites" rel="noopener" target="_blank">highest levels of quality</a>, selected by the Flutter
+                        Ecosystem Committee</p>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6  col-xs-12 ">
+                            <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                <div class="container-fluid p-4 second-sec-hover-eff">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="fw-normal">package_info_plus</h5>
+                                    </a>
+                                    <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter plugin for querying information about the application package, such as CFBundleVersion on iOS or versionCode on Android.</p>
+                                    <div class="d-flex gap-1 align-items-center mt-3">
+                                        <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                        <a class="text-decoration-none d-green fs-12" href="#">fluttercommunity.dev</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6  col-xs-12 ">
+                            <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                <div class="container-fluid p-4 second-sec-hover-eff">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="fw-normal">flutter_slidable</h5>
+                                    </a>
+                                    <p class="m-0 mb-2 fs-14 second-sec-pera-hight">A Flutter implementation of slidable list item with directional slide actions that can be dismissed.</p>
+                                    <div class="d-flex gap-1 align-items-center mt-3">
+                                        <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                        <a class="text-decoration-none d-green fs-12" href="#">romainrastel.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6  col-xs-12  d-none d-sm-block">
+                            <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                <div class="container-fluid p-4 second-sec-hover-eff">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="fw-normal">android_intent_plus</h5>
+                                    </a>
+                                    <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter plugin for launching Android Intents. Not supported on iOS.</p>
+                                    <div class="d-flex gap-1 align-items-center mt-3">
+                                        <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                        <a class="text-decoration-none d-green fs-12" href="#">fluttercommunity.dev</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6  col-xs-12 d-none d-sm-block">
+                            <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                <div class="container-fluid p-4 second-sec-hover-eff">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="fw-normal">flutter_mobx</h5>
+                                    </a>
+                                    <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter integration for MobX. It provides a set of Observer widgets that automatically rebuild when the tracked observables change.</p>
+                                    <div class="d-flex gap-1 align-items-center mt-3">
+                                        <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                        <a class="text-decoration-none d-green fs-12" href="#">dart.pixelingene.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex justify-content-end"><a class="home-block-view-all-link  text-decoration-none text-uppercase fw-bold" href="/packages?q=is%3Aflutter-favorite" rel="nofollow" data-ga-click-event="landing-flutter-favorites-view-all">View all</a></div>
+                </div>
+            </div>
+        </sectio>
+        <div class="landing-main">
+            <section class="third-sec">
+                <div class="container-xxl">
+                    <div class="container-fluid">
+                        <h2 class="fw-normal">Most popular packages</h2>
+                        <p class="">Some of the most downloaded packages over the past 60 days</p>
+                        <div class="row">
+                            <div class="col-3 position-relative third-sec-col-a d-none d-lg-block"><img class="img-fluid" src="assets/image/landing-01.webp" alt=""></div>
+                            <div class="col-9 third-sec-col-b">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6  col-xs-12 ">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">package_info_plus</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter plugin for querying information about the application package, such as CFBundleVersion on iOS or versionCode on Android.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">fluttercommunity.dev</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6  col-xs-12 ">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">flutter_slidable</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">A Flutter implementation of slidable list item with directional slide actions that can be dismissed.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">romainrastel.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6  col-xs-12  d-none d-sm-block">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">android_intent_plus</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter plugin for launching Android Intents. Not supported on iOS.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">fluttercommunity.dev</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6  col-xs-12 d-none d-sm-block">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">flutter_mobx</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter integration for MobX. It provides a set of Observer widgets that automatically rebuild when the tracked observables change.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">dart.pixelingene.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6  col-xs-12 ">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">flutter_slidable</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">A Flutter implementation of slidable list item with directional slide actions that can be dismissed.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">romainrastel.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6  col-xs-12  d-none d-sm-block">
+                                        <div class="container-fluid d-flex flex-wrap gap-3 mb-3 p-0 shadow-lg bg-body rounded">
+                                            <div class="container-fluid p-4 second-sec-hover-eff">
+                                                <a class="text-decoration-none" href="#">
+                                                    <h5 class="fw-normal">android_intent_plus</h5>
+                                                </a>
+                                                <p class="m-0 mb-2 fs-14 second-sec-pera-hight">Flutter plugin for launching Android Intents. Not supported on iOS.</p>
+                                                <div class="d-flex gap-1 align-items-center mt-3">
+                                                    <img class="" src="assets/image/material-icon-verified.svg" alt="" width="14px" height="14px">
+                                                    <a class="text-decoration-none d-green fs-12" href="#">fluttercommunity.dev</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer></footer>
 </body>
